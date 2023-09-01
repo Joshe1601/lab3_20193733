@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Jugadores</title>
+    <link rel="stylesheet" href="../../static/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/style.css">
+    <link th:href="@{/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/style.css}" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Lista de Jugadores</h1>
+        <br>
+        <a href="" class="btn btn-primary">Nuevo jugador</a>
+        <br>
+        <br>
+        <div class="container-table">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Posicion</th>
+                    <th>Club</th>
+                    <th>Selección</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="">
+                    <td>Id</td>
+                    <td>Nombre</td>
+                    <td>Edad</td>
+                    <td>Posicion</td>
+                    <td>Club</td>
+                    <td>Selección</td>
+                    <td>
+                        <a href="" class="btn btn-danger">Borrar</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
